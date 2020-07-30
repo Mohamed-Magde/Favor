@@ -1,0 +1,116 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.nav {
+  width: 100vw;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: transparent;
+}
+
+.nav .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.nav-logo-icon {
+  width: 13rem;
+  fill: #fff;
+}
+
+.sticky {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+  color: black;
+  -webkit-animation: moveDown .5s;
+          animation: moveDown .5s;
+}
+
+.sticky i {
+  font-size: 2rem;
+  color: #00a1df;
+}
+
+.sticky .nav-logo-icon {
+  width: 13rem;
+  fill: #00a1df;
+}
+
+@-webkit-keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  to {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  to {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0rem);
+            transform: rotateY(0rem);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0rem);
+            transform: rotateY(0rem);
+  }
+}
+/*# sourceMappingURL=main.css.map */
